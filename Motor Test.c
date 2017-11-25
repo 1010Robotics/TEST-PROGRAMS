@@ -87,16 +87,16 @@ task main()
 	motor[testMotor] = noPower;           // stop the motor
 	wait1Msec(1000);                      // rest period to make sure motor is stopped
 
-	motor[testMotor] = quarterPower;      // run motor at 25% power
+	motor[testMotor] = -quarterPower;      // run motor at 25% power
 	recordData();
 
-	motor[testMotor] = halfPower;         // run motor at 50% power
+	motor[testMotor] = -halfPower;         // run motor at 50% power
 	recordData();
 
-	motor[testMotor] = threeFourthsPower; // run motor 75% power
+	motor[testMotor] = -threeFourthsPower; // run motor 75% power
 	recordData();
 
-	motor[testMotor] = fullPower;         // give motor 100% power
+	motor[testMotor] = -fullPower;         // give motor 100% power
 	recordData();
 
 }
